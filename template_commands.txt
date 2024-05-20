@@ -4,7 +4,7 @@ const {SlashCommandBuilder} = require('discord.js');
 const config = require("../config.json");
 const sql = require("../bot").sql;
 
-var log = function(data) {console.log(`[${moduleName}]`, data);};
+var log = function(data) {console.log(`[${commandName}]`, data);};
 
 module.exports = {
     info: {name: commandName, disabled: false},
