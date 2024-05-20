@@ -1,0 +1,16 @@
+const commandName = "";
+
+const {SlashCommandBuilder} = require('discord.js');
+const config = require("../config.json");
+const sql = require("../bot").sql;
+
+var log = function(data) {console.log(`[${moduleName}]`, data);};
+
+module.exports = {
+    info: {name: commandName, disabled: false},
+    data: new SlashCommandBuilder()
+    
+    async execute(interaction) {
+	
+    }
+} 

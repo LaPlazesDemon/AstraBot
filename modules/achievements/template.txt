@@ -1,0 +1,17 @@
+const moduleName = "";
+const moduleInDev = true;
+
+const {Events} = require('discord.js');
+const config = require("../../config.json");
+const devMode = require("../../bot").devMode;
+const sql = require("../../bot").sql;
+
+var debug = function(data) {if (devMode && moduleInDev) console.log(`[${moduleName}][Debug]`, data);};
+var log = function(data) {console.log(`[${moduleName}]`, data);};
+
+module.exports = {
+    info: {name: moduleName},
+    startAchievements: function(bot) {
+
+    }
+} 
