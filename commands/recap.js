@@ -36,7 +36,7 @@ module.exports = {
                     stream: false
                  })
                 .then(response => {
-                    interaction.editReply("Here is a 24 hour recap!\n\n"+response.data.response);
+                    interaction.editReply("*:warning:Please note that this command uses locally hosted LLMs and can make mistakes. It will be tweaked and refined as time passes but do not take what it says as gospel, more just as a catchup tool. Enjoy!*\nHere is a 24 hour recap!\n\n"+response.data.response);
                 })
                 .catch(error => {
                     interaction.editReply("There was an error getting the recap, apologies");     
